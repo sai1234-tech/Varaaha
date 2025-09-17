@@ -1,0 +1,54 @@
+/* General Header */
+.header {
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Flex Layout */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  padding: 1rem 2rem;
+}
+/* Logo Styling */
+.nav-left .logo {
+  color: #f4c542;
+  text-transform: uppercase;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+
+.nav-right {
+  padding: 0vw 3vw 0vw 0vw;
+}
+/* Nav Links */
+.nav-right .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-right .nav-links li {
+  display: inline-block;
+}
+
+.nav-right .nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 1.3vw;
+}
+
+.nav-right .nav-links a:hover {
+  color: #f4c542;
+  border-bottom: 2px solid #f4c542;
+}

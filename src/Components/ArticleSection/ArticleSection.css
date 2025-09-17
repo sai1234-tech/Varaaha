@@ -1,0 +1,112 @@
+.carousel-item img {
+  height: 60vh;   /* adjust (e.g., 70vh, 80vh) */
+  object-fit: cover; 
+  /* crop to fit while maintaining aspect ratio */
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  /* object-fit: contain; */
+}
+
+.Announcements_section{
+    display: flex;
+    justify-content: space-between;
+}
+.left_section{
+    padding:2.5vw;
+}
+.left_section img{
+    width: 40vw;
+}
+.right_section{
+    padding:2.5vw;
+
+}
+.right_section span{
+    font-family: "Outfit";
+font-weight: 600;
+font-size: 2.13vw;
+
+
+}
+.right_section_para{
+    font-family: "Jost";
+font-weight: 400;
+font-size: 1.39vw;
+
+}
+
+
+/* ArticleSection.css - Data Section Styling */
+
+.data_section {
+  background: #f9f9f9;
+  padding: 50px 10%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-top: 50px;
+  font-family: "Jost", sans-serif;
+  color: #1e2a38;
+  line-height: 1.7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data_section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.data_section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0a142f;
+  position: relative;
+}
+
+.data_section h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #daa520; /* gold underline */
+  margin: 10px 0 20px;
+  border-radius: 2px;
+}
+
+.data_section ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.data_section ul li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.data_section ul li strong {
+  color: #daa520;
+}
+
+.data_section p {
+  font-size: 1.1rem;
+  color: #28375e;
+}
+
+@media (max-width: 768px) {
+  .data_section {
+    padding: 40px 5%;
+  }
+
+  .data_section h3 {
+    font-size: 1.5rem;
+  }
+
+  .data_section ul li,
+  .data_section p {
+    font-size: 1rem;
+  }
+}

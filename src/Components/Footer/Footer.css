@@ -1,0 +1,74 @@
+.footer {
+  /* background-color: #1a1a1a; */
+  background-color: #FFFFFF;
+  text-align: center;
+  /* padding: 1vw 1vw; */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Added box shadow */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+.footer:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.footer-sections{
+    display: flex !important;
+}
+
+.footer-section1{
+    padding: 3vw 3vw;
+}
+.logo{
+     color: #f4c542;
+  text-transform: uppercase;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+.footer-section2{
+    width: 60vw;
+
+}
+.footer-section2 img {
+  width: 3vw; 
+  height: auto;
+  margin: 3vw 1vw;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-section2 img:hover {
+  transform: scale(1.1);
+}
+
+.footer-section3{
+        width: 20vw;
+   padding:2vw 0vw ;
+/* background-color: red; */
+
+}
+.footer-section3 span{
+    font-family: "Plus Jakarta Sans";
+font-weight: 600;
+  font-size: 1.3vw;       /* 16px → vw */
+  color: #0A142F;
+}
+.footer-section3 p{
+    font-family: "Plus Jakarta Sans";
+ font-weight: 500;
+  font-size: 1vw;       /* 16px → vw */
+  color: #28375E;
+}
+.footer-copyright{
+    background-color: #2D2E29;
+    display: flex;
+    justify-content: space-around;
+    color:#FFFFFF;
+    padding: 1vw 0vw;
+}
+.footer_allrights,.footer_privacy{
+  font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-size: 1.07vw;
+    color:#FFFFFF;
+
+}
