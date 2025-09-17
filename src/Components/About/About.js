@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
          <section className="about" id="about">
-      <h2>About Us</h2>
+      <h2>About Us SAIKIRAN</h2>
       <p>
         Varaaha Mines is dedicated to responsible mining of Gold, Coal, and
         other valuable minerals. Our mission is to extract resources
