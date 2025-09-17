@@ -2,7 +2,7 @@ import React from 'react'
 import ArticleSection from './Components/ArticleSection/ArticleSection'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
-import Hero from './Components/Hero/Hero'
+// import Hero from './Components/Hero/Hero'
 import Services from './Components/Services/Services'
 import Contact from './Components/Contact/Contact'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -25,6 +25,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        
       </Routes>
       <Footer />
     </Router>
