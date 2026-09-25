@@ -1,0 +1,245 @@
+.concession-section {
+  width: 100%;
+}
+
+.concession-card {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.concession-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 0.8rem;
+}
+
+.concession-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.site-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.site-select-btn {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  text-align: left;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.site-select-btn:hover {
+  background: rgba(244, 197, 66, 0.05);
+  border-color: rgba(244, 197, 66, 0.3);
+}
+
+.site-select-btn.active {
+  background: rgba(244, 197, 66, 0.12);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.btn-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.pin-icon {
+  color: var(--accent-color);
+}
+
+.site-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #34d399;
+}
+
+.site-select-btn h4 {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.site-select-btn.active h4 {
+  color: var(--accent-color);
+}
+
+.site-loc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Site Details Card */
+.site-details-card {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-color: var(--border-glow);
+}
+
+.site-img-col {
+  position: relative;
+  height: 340px;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.site-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.06) brightness(1.05);
+}
+
+.site-img-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.type-badge {
+  padding: 0.4rem 0.9rem;
+  background: rgba(5, 8, 17, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.site-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.info-top-row h3 {
+  font-size: 1.8rem;
+}
+
+.esg-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #34d399;
+  font-weight: 600;
+}
+
+.metrics-pill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.metric-pill {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.m-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.m-val {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.m-val.gold {
+  color: var(--accent-color);
+}
+
+.site-highlights-box h4 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+
+.site-highlights-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.site-highlights-box li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.check-icon {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .site-selector-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-details-card {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics-pill-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .concession-card, .site-details-card {
+    padding: 1.25rem;
+  }
+
+  .site-img-col {
+    height: 220px;
+  }
+
+  .info-top-row h3 {
+    font-size: 1.4rem;
+  }
+}

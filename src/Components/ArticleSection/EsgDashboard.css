@@ -1,0 +1,150 @@
+.esg-dashboard-section {
+  width: 100%;
+}
+
+.esg-dashboard-card {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.esg-dashboard-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 0.8rem;
+}
+
+.esg-dashboard-desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.esg-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.esg-stat-card {
+  padding: 1.8rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  transition: all var(--transition-normal);
+}
+
+.esg-stat-card:hover {
+  background: rgba(16, 185, 129, 0.04);
+  border-color: rgba(16, 185, 129, 0.3);
+  transform: translateY(-4px);
+}
+
+.stat-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-card-icon.green {
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+}
+
+.stat-card-icon.blue {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+}
+
+.stat-card-icon.emerald {
+  background: rgba(52, 211, 153, 0.12);
+  color: #34d399;
+}
+
+.stat-card-icon.gold {
+  background: rgba(244, 197, 66, 0.12);
+  color: var(--accent-color);
+}
+
+.stat-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.card-num {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.card-num.green { color: #10b981; }
+.card-num.blue { color: #38bdf8; }
+.card-num.emerald { color: #34d399; }
+.card-num.gold { color: var(--accent-color); }
+
+.card-sub {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+/* Accreditation Bar */
+.esg-accreditation-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem 2rem;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: var(--border-radius-md);
+}
+
+.shield-icon {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.accred-text strong {
+  font-size: 1rem;
+  color: #34d399;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.accred-text p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .esg-dashboard-card {
+    padding: 1.25rem;
+  }
+
+  .esg-stat-card {
+    padding: 1.25rem;
+  }
+
+  .esg-accreditation-bar {
+    padding: 1.25rem;
+    flex-direction: column;
+    text-align: center;
+  }
+}
