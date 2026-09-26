@@ -119,6 +119,42 @@ function ArticleSection() {
 
       {/* Main Content Body */}
       <main className="main-content-section" id="article-details">
+        {/* Global Natural Stone Exporter Profile Card */}
+        <section className="company-intro-banner">
+          <div className="glass-panel company-intro-card">
+            <div className="intro-badge">
+              <Globe size={18} className="intro-icon" />
+              <span>India's Leading Global Exporter & Supplier</span>
+            </div>
+            <h2>M/S Varaaha Mines Pvt Ltd.</h2>
+            <p className="intro-lead">
+              We are an Indian based exporter & supplier of natural stones such as <strong>Granite raw Blocks, sandstone slabs, limestone tiles, flooring slate stone</strong>, for buyers around the globe.
+            </p>
+            <p className="intro-body">
+              We at <strong>M/S Varaaha Mines Pvt Ltd.</strong> take pleasure in representing ourselves as one of the most reputed suppliers and exporters of natural stone from India. We embarked upon our splendid voyage with a vision to offer natural dimensional building stones and stone carving products within the stipulated time.
+            </p>
+
+            <div className="intro-features-grid">
+              <div className="feature-pill">
+                <CheckCircle2 size={16} className="check-icon" />
+                <span>Granite Raw Blocks & Processed Slabs</span>
+              </div>
+              <div className="feature-pill">
+                <CheckCircle2 size={16} className="check-icon" />
+                <span>Sandstone Slabs & Limestone Tiles</span>
+              </div>
+              <div className="feature-pill">
+                <CheckCircle2 size={16} className="check-icon" />
+                <span>Flooring Slate Stone & Custom Carvings</span>
+              </div>
+              <div className="feature-pill">
+                <CheckCircle2 size={16} className="check-icon" />
+                <span>Timely International Export Shipping</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Knowledge Base & OneMine Announcement Card */}
         <section className="announcement-banner-wrapper">
           <div className="glass-panel announcement-card">
