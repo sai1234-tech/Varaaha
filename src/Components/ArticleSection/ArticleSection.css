@@ -769,4 +769,110 @@
   color: #f8fafc;
 }
 
+/* Why Varaaha Mines Section */
+.why-varaaha-section {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.8));
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-radius: 20px;
+  padding: 3.5rem 2.5rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.why-varaaha-header {
+  max-width: 850px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.why-varaaha-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.why-lead {
+  font-size: 1.2rem;
+  color: #e2e8f0;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.why-pricing-highlight {
+  font-size: 1.1rem;
+  color: #fbbf24;
+  font-weight: 700;
+  background: rgba(217, 119, 6, 0.12);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  padding: 0.6rem 1.25rem;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.why-features-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.why-feature-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.why-feature-box:hover {
+  transform: translateY(-5px);
+  border-color: rgba(217, 119, 6, 0.4);
+}
+
+.why-icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 auto 1.25rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-icon-circle.gold {
+  background: rgba(217, 119, 6, 0.15);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  color: #fbbf24;
+}
+
+.why-icon-circle.emerald {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+}
+
+.why-icon-circle.blue {
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+
+.why-feature-box h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 0.75rem 0;
+}
+
+.why-feature-box p {
+  font-size: 0.925rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
 

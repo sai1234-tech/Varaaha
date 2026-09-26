@@ -21,7 +21,8 @@ import {
   ChevronRight,
   Download,
   Cpu,
-  Pickaxe
+  Pickaxe,
+  Award
 } from "lucide-react";
 import "./ArticleSection.css";
 
@@ -221,6 +222,49 @@ function ArticleSection() {
               <p>
                 Only a leading company such as Varaaha Mines with the capacity to gather large resources can carry out an extensive range of architectural projects worldwide with guaranteed execution.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Varaaha Mines Section */}
+        <section className="glass-panel why-varaaha-section">
+          <div className="why-varaaha-header center">
+            <div className="section-kicker">
+              <Sparkles size={16} />
+              <span>Competitive Advantage</span>
+            </div>
+            <h2>Why Varaaha Mines?</h2>
+            <p className="why-lead">
+              We are leading Exporter and Suppliers of natural stones who are offering with the best texture and composition.
+            </p>
+            <p className="why-pricing-highlight">
+              We Offer the best competent price for all esteemed buyers all over the world.
+            </p>
+          </div>
+
+          <div className="why-features-row">
+            <div className="why-feature-box">
+              <div className="why-icon-circle gold">
+                <Award size={24} />
+              </div>
+              <h4>Best Texture & Composition</h4>
+              <p>High-grade natural stones hand-selected for optimal mineral grain density, rich coloration, and zero cracks.</p>
+            </div>
+
+            <div className="why-feature-box">
+              <div className="why-icon-circle emerald">
+                <TrendingUp size={24} />
+              </div>
+              <h4>Best Competent Price</h4>
+              <p>Unmatched direct-from-quarry factory rates ensuring maximum profitability and cost efficiency for international buyers.</p>
+            </div>
+
+            <div className="why-feature-box">
+              <div className="why-icon-circle blue">
+                <Globe size={24} />
+              </div>
+              <h4>Global Delivery Network</h4>
+              <p>Seamless international container shipping and logistics infrastructure reaching project sites across the globe.</p>
             </div>
           </div>
         </section>
