@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import ArticleSection from "./Components/ArticleSection/ArticleSection";
 import About from "./Components/About/About";
+import Products from "./Components/Products/Products";
 import Services from "./Components/Services/Services";
 import Contact from "./Components/Contact/Contact";
 import PrivacyPolicy from "./Components/Privacy/PrivacyPolicy";
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ArticleSection />} />
           <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />

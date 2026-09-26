@@ -42,19 +42,20 @@ function Footer() {
           <ul>
             <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
             <li><Link to="/about" onClick={scrollToTop}>About Us</Link></li>
+            <li><Link to="/products" onClick={scrollToTop}>Our Products</Link></li>
             <li><Link to="/services" onClick={scrollToTop}>Our Services</Link></li>
             <li><Link to="/contact" onClick={scrollToTop}>Contact Us</Link></li>
             <li><a href="https://onemine.org" target="_blank" rel="noopener noreferrer">OneMine.org Partner Portal</a></li>
           </ul>
         </div>
 
-        {/* Column 3: Executive Contact */}
+        {/* Column 3: Get In Touch & Registered Office */}
         <div className="footer-col contact-col">
-          <h4>Executive Desk</h4>
+          <h4>Get In Touch</h4>
           <div className="footer-contact-items">
             <p className="contact-line">
-              <MapPin size={18} className="c-icon" />
-              <span>Hyderabad, Telangana, India</span>
+              <MapPin size={22} className="c-icon" />
+              <span><strong>Registered Office:</strong> Villa No:55, Ramky Pearl, Sathavahana Nagar, KPHB, Hyderabad-500072</span>
             </p>
             <p className="contact-line">
               <PhoneCall size={18} className="c-icon" />
