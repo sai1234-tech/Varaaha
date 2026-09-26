@@ -5,57 +5,54 @@ import {
   ShieldCheck,
   Award,
   Users,
-  Leaf,
   Calendar,
   Building2,
-  Sparkles
+  Sparkles,
+  Trophy,
+  Globe,
+  Cpu,
+  Layers
 } from "lucide-react";
-import Coal from "../../Assests/coal_hd.jpg";
 import Gold from "../../Assests/gold_hd.jpg";
+import BlackGalaxy from "../../Assests/black_galaxy.jpg";
 import "./About.css";
 
 const milestones = [
   {
-    year: "2012",
-    title: "Company Founding",
-    desc: "Established Varaaha Mines in Hyderabad, India, with a vision for modern, ethical mineral exploration.",
+    year: "May 9, 1989",
+    title: "Establishment as 100% EOU",
+    desc: "Founded by Mr. G.V. Pratap Reddy in Hyderabad as a 100% Export Oriented Unit (EOU) dedicated to natural stone extraction and global exports.",
   },
   {
-    year: "2016",
-    title: "Gold Concession Acquisition",
-    desc: "Secured high-grade gold mining leases equipped with zero-cyanide environmentally compliant leaching tech.",
+    year: "1990 - 1991",
+    title: "National Export Achievement Award",
+    desc: "Managing Director Mr. G.V. Pratap Reddy received the prestigious Export Achievement Award from the Minister of Commerce, Govt. of India.",
   },
   {
-    year: "2020",
-    title: "Autonomous Drone Telemetry",
-    desc: "Integrated AI-driven LiDAR drone mapping and real-time seismic sensors across all open-pit coal seams.",
+    year: "Strategic Expansion",
+    title: "Group Export Acquisitions",
+    desc: "M/S Varaaha Minerals Pvt Ltd expanded its international presence by acquiring two major export firms: M/S Dinesh Granite Exports and Veera Siva Granites & Exports Pvt Ltd.",
   },
   {
-    year: "2024",
-    title: "ESG & Zero-Carbon Milestone",
-    desc: "Achieved 100% closed-loop water treatment and initiated 500+ acres of native forest land rehabilitation.",
+    year: "Modern Infrastructure",
+    title: "Swedish Tech & Heavy Machinery",
+    desc: "Equipped operations with imported Sandvik (Sweden) drilling components, Tamrock, Poclains, Escorts & Derrick cranes, and advanced gangsaw polishing units.",
   },
 ];
 
 const leadershipTeam = [
   {
-    name: "Rajesh V. Sharma",
-    role: "Chief Executive Officer & Founder",
-    experience: "24+ Yrs Mining Engineering",
-    bio: "Pioneered sustainable shaft excavation methods across South Asia and Europe.",
+    name: "Mr. G.V. Pratap Reddy",
+    role: "Founder & Managing Director",
+    experience: "Promoter & Visionary (Est. 1989)",
+    bio: "Honored with the Export Achievement Award (1990-1991) by the Minister of Commerce, Govt. of India. Built Varaaha Mines into a premier 100% EOU natural stone exporter.",
   },
   {
-    name: "Dr. Ananya Reddy",
-    role: "Chief Technical Officer",
-    experience: "Ph.D. Hydro-Metallurgy",
-    bio: "Spearheaded green gold leaching research & automated seismic blast protocols.",
-  },
-  {
-    name: "Vikramaditya Verma",
-    role: "VP of Operations & Safety",
-    experience: "18+ Yrs Heavy Mining Ops",
-    bio: "Maintained an industry-leading zero-accident record across 14 active concessions.",
-  },
+    name: "Corporate Executive Board",
+    role: "Global Export & Quarry Division",
+    experience: "Integrated Group Operations",
+    bio: "Managing direct quarry extraction and international trade across Varaaha Mines, M/S Dinesh Granite Exports, and Veera Siva Granites & Exports Pvt Ltd.",
+  }
 ];
 
 function About() {
@@ -66,53 +63,117 @@ function About() {
         <div className="about-hero-content">
           <div className="section-kicker">
             <Sparkles size={16} />
-            <span>Enterprise Overview</span>
+            <span>100% Export Oriented Unit (EOU) • Est. May 9th, 1989</span>
           </div>
-          <h1>Pioneering Sustainable Wealth from the Earth</h1>
+          <h1>Our Company Profile & Heritage</h1>
           <p className="about-hero-sub">
-            Varaaha Mines is a premier mineral exploration & production enterprise, dedicated to responsible extraction of Gold, Coal, and key industrial minerals.
+            M/S Varaaha Mines Pvt Ltd is one of India's fastest-growing natural stone suppliers and exporters, delivering world-class Black Granite, Black Galaxy, Srikakulam Blue, Tan Brown, Sandstone, Limestone, and Slate Stone to global buyers.
           </p>
         </div>
       </section>
 
       {/* Main Content Container */}
       <div className="about-container">
-        {/* Story Section */}
+        {/* Core Company Profile Card */}
+        <section className="glass-panel profile-banner-card">
+          <div className="profile-badge-row">
+            <span className="p-badge"><Trophy size={16} /> Award-Winning Exporter</span>
+            <span className="p-badge"><Globe size={16} /> 100% EOU Certified</span>
+            <span className="p-badge"><Cpu size={16} /> Swedish Sandvik Technology</span>
+          </div>
+
+          <h2>About M/S Varaaha Mines Pvt Ltd.</h2>
+          
+          <div className="profile-body-text">
+            <p className="lead-text">
+              <strong>M/S Varaaha Mines Pvt Ltd</strong> was established on <strong>May 9th, 1989</strong> as a <strong>100% Export Oriented Unit (EOU)</strong>. The company was promoted by <strong>Mr. G.V. Pratap Reddy</strong> with an objective of conducting the business of mining, excavating, extracting, raising, purifying, and cleaning all types of Granites, Marble Sands, Stones, Ores, and minerals to cut, shape, size, polish, grind, sandblast, and make slabs for export worldwide.
+            </p>
+            <p>
+              Operating from its corporate headquarters in <strong>Hyderabad, India</strong>, the company was built on the motto of providing world-class Indian natural stones at competitive prices throughout the global market. <strong>M/S Varaaha Minerals Pvt Ltd</strong> is recognized as one of the fastest-growing organizations in the natural stone sector.
+            </p>
+          </div>
+
+          {/* National Award Highlight */}
+          <div className="award-highlight-box">
+            <div className="award-icon-box">
+              <Trophy size={32} />
+            </div>
+            <div className="award-details">
+              <h4>National Export Achievement Award Winner</h4>
+              <p>
+                Managing Director <strong>Mr. G.V. Pratap Reddy</strong> received the prestigious <strong>Export Achievement Award</strong> from the <strong>Minister of Commerce, Govt. of India (1990-1991)</strong> in recognition of outstanding export performance.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Heavy Equipment & Infrastructure Profile */}
         <section className="glass-panel story-section">
           <div className="story-grid">
             <div className="story-text">
-              <h2>Our Heritage & Commitment</h2>
+              <h2>World-Class Infrastructure & Swedish Tech</h2>
               <p>
-                Founded on the core principle that resource extraction must coexist with ecological integrity, <strong>Varaaha Mines</strong> has transformed traditional mining operations into high-precision, technology-driven ecosystems.
+                We have acquired sophisticated imported polishing machines for finishing our granite slabs to international perfection. Our operations deploy state-of-the-art imported <strong>Heavy Earth Moving Machines (HEMM)</strong> including Poclains, Tamrock equipment, Escorts cranes, Derrick cranes, and heavy dumpers.
               </p>
               <p>
-                From underground gold vein excavation to large-scale surface coal mining, we utilize automated machinery, eco-friendly chemical separation, and continuous land restoration to ensure long-term value for investors and local communities alike.
+                Our drilling rods and precision rock-cutting components are directly imported from <strong>Sandvik</strong>, Sweden's world-leading engineering group. This guarantees high precision, crack-free cuboid slab extraction, and unmatched structural durability.
               </p>
 
               <div className="story-highlights">
                 <div className="highlight-box">
-                  <span className="highlight-num">14+</span>
-                  <span className="highlight-label">Active Mine Sites</span>
+                  <span className="highlight-num">1989</span>
+                  <span className="highlight-label">Year Established</span>
                 </div>
                 <div className="highlight-box">
-                  <span className="highlight-num">2,500+</span>
-                  <span className="highlight-label">Workforce & Engineers</span>
+                  <span className="highlight-num">3 Group</span>
+                  <span className="highlight-label">Export Companies</span>
                 </div>
                 <div className="highlight-box">
-                  <span className="highlight-num">100%</span>
-                  <span className="highlight-label">ESG Regulatory Compliance</span>
+                  <span className="highlight-num">Sandvik</span>
+                  <span className="highlight-label">Swedish Tools</span>
                 </div>
               </div>
             </div>
 
             <div className="story-media">
               <div className="media-card card-1">
-                <img src={Gold} alt="Gold Ore Refining" />
-                <span>Gold Extraction Facility</span>
+                <img src={BlackGalaxy} alt="Black Galaxy Granite Slabs" />
+                <span>Black Galaxy & Premium Slabs</span>
               </div>
               <div className="media-card card-2">
-                <img src={Coal} alt="Coal Seam Operation" />
-                <span>Clean Coal Operations</span>
+                <img src={Gold} alt="Heavy Extraction Site" />
+                <span>HEMM Heavy Machinery Site</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Sister Companies / Acquisitions Showcase */}
+        <section className="glass-panel acquisitions-card">
+          <div className="section-header">
+            <div className="section-kicker">
+              <Layers size={16} />
+              <span>Group Enterprise Expansion</span>
+            </div>
+            <h2>Export Companies & Group Sister Concerns</h2>
+            <p className="section-desc">
+              To cater to specific client demands worldwide, M/S Varaaha Minerals Pvt Ltd acquired two reputed export companies:
+            </p>
+          </div>
+
+          <div className="acquisitions-grid">
+            <div className="acq-item">
+              <Building2 size={24} className="acq-icon" />
+              <div>
+                <h4>M/S Dinesh Granite Exports</h4>
+                <p>Specialized processing and export of dimensional granite gangsaw slabs.</p>
+              </div>
+            </div>
+            <div className="acq-item">
+              <Building2 size={24} className="acq-icon" />
+              <div>
+                <h4>Veera Siva Granites & Exports Pvt Ltd</h4>
+                <p>Direct quarry management and heavy block extraction for global projects.</p>
               </div>
             </div>
           </div>
@@ -135,7 +196,7 @@ function About() {
               </div>
               <h3>Mission</h3>
               <p>
-                To extract Earth's essential minerals safely and efficiently while maintaining clean water, zero-harm environments, and sustainable community empowerment.
+                To offer natural dimensional building stones and stone carving products of international quality within stipulated timeframes at competitive global prices.
               </p>
             </div>
 
@@ -145,7 +206,7 @@ function About() {
               </div>
               <h3>Vision</h3>
               <p>
-                To set the global benchmark for carbon-neutral mining technology, AI-assisted exploration, and total site land rehabilitation.
+                To maintain our position as one of India's most trusted natural stone exporters by combining Swedish extraction technology with direct quarry ownership.
               </p>
             </div>
 
@@ -155,7 +216,7 @@ function About() {
               </div>
               <h3>Values</h3>
               <p>
-                Integrity in reporting, absolute transparency with stakeholders, zero tolerance for safety compromises, and relentless technical innovation.
+                Absolute integrity, zero-crack block dressing, environmental responsibility, and long-term client trust across global markets.
               </p>
             </div>
           </div>
@@ -166,9 +227,9 @@ function About() {
           <div className="section-header center">
             <div className="section-kicker">
               <Calendar size={16} />
-              <span>Our Evolution</span>
+              <span>Our Legacy & Milestones</span>
             </div>
-            <h2>Milestones & Growth Journey</h2>
+            <h2>35+ Years of Export Excellence</h2>
           </div>
 
           <div className="timeline-grid">
@@ -182,14 +243,14 @@ function About() {
           </div>
         </section>
 
-        {/* Leadership & Engineering Team */}
+        {/* Leadership & Founders */}
         <section className="leadership-section">
           <div className="section-header center">
             <div className="section-kicker">
               <Users size={16} />
-              <span>Executive Leadership</span>
+              <span>Leadership & Promoters</span>
             </div>
-            <h2>Engineers & Visionaries</h2>
+            <h2>Promoters & Management</h2>
           </div>
 
           <div className="leadership-grid">
@@ -204,19 +265,6 @@ function About() {
                 <p className="leader-bio">{leader.bio}</p>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* ESG Sustainability Banner */}
-        <section className="glass-panel esg-banner">
-          <div className="esg-icon">
-            <Leaf size={36} color="#10b981" />
-          </div>
-          <div className="esg-content">
-            <h3>ESG & Environmental Commitment</h3>
-            <p>
-              We believe mining must heal the land it touches. Every active concession operates alongside an accredited reforestation program, returning mined land into thriving ecosystems.
-            </p>
           </div>
         </section>
       </div>

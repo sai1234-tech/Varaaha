@@ -1,0 +1,401 @@
+/* Quarries Page Stylesheet */
+.quarries-page {
+  min-height: 100vh;
+  background-color: var(--bg-dark, #0b0f19);
+  color: var(--text-main, #f3f4f6);
+  padding-bottom: 5rem;
+}
+
+/* Quarries Hero Banner */
+.quarries-hero {
+  position: relative;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.9)),
+              radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.15), transparent 70%);
+  padding: 5rem 1.5rem 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.quarries-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.quarries-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+}
+
+.quarries-hero p {
+  font-size: 1.125rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Container & Cards */
+.quarries-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.quarry-intro-card {
+  padding: 3.5rem;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 20px;
+}
+
+.intro-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.quarry-intro-card h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0 0 1.25rem 0;
+}
+
+.quarry-intro-text .lead-paragraph {
+  font-size: 1.15rem;
+  color: #e2e8f0;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.quarry-intro-text p {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.quarry-intro-text strong {
+  color: #fbbf24;
+}
+
+.quarry-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.q-stat-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 1.25rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.q-stat-num {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #34d399;
+  margin-bottom: 0.25rem;
+}
+
+.q-stat-lbl {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* State Cards Grid */
+.state-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.state-quarry-card {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.state-quarry-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.state-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.state-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.state-card-header h3 {
+  font-size: 1.4rem;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.pit-count {
+  font-size: 0.8rem;
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.state-desc {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.location-pits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pit-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.85rem;
+  border-radius: 12px;
+}
+
+.pit-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pit-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pit-details h4 {
+  font-size: 1rem;
+  color: #f8fafc;
+  margin: 0 0 0.2rem 0;
+}
+
+.stone-type {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #fbbf24;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.pit-specs {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Machinery Banner */
+.machinery-banner {
+  padding: 3rem;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.machinery-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.machinery-text h2 {
+  font-size: 2rem;
+  color: #f8fafc;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.machinery-text p {
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.machinery-text p strong {
+  color: #f8fafc;
+}
+
+.machinery-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.machinery-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.chk-icon {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.machinery-image {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.machinery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-overlay-label {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+/* Contact Hours Bar */
+.contact-hours-bar {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  border-radius: 20px;
+  padding: 2.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hours-col {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hours-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(217, 119, 6, 0.15);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  color: #fbbf24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hours-icon-box.blue {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+
+.h-label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+}
+
+.hours-col h3 {
+  font-size: 1.25rem;
+  color: #f8fafc;
+  margin: 0.2rem 0;
+}
+
+.phone-link {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fbbf24;
+  text-decoration: none;
+}
+
+.hours-time {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.hours-divider {
+  width: 1px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 900px) {
+  .machinery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hours-divider {
+    display: none;
+  }
+
+  .quarry-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

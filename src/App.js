@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import ArticleSection from "./Components/ArticleSection/ArticleSection";
 import About from "./Components/About/About";
 import Products from "./Components/Products/Products";
+import Quarries from "./Components/Quarries/Quarries";
 import Services from "./Components/Services/Services";
 import Contact from "./Components/Contact/Contact";
 import PrivacyPolicy from "./Components/Privacy/PrivacyPolicy";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<ArticleSection />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/quarries" element={<Quarries />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />

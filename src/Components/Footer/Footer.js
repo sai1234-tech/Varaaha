@@ -6,7 +6,8 @@ import {
   Mail,
   MapPin,
   ArrowUp,
-  Send
+  Send,
+  Clock
 } from "lucide-react";
 import "./Footer.css";
 
@@ -43,6 +44,7 @@ function Footer() {
             <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
             <li><Link to="/about" onClick={scrollToTop}>About Us</Link></li>
             <li><Link to="/products" onClick={scrollToTop}>Our Products</Link></li>
+            <li><Link to="/quarries" onClick={scrollToTop}>Our Quarries</Link></li>
             <li><Link to="/services" onClick={scrollToTop}>Our Services</Link></li>
             <li><Link to="/contact" onClick={scrollToTop}>Contact Us</Link></li>
             <li><a href="https://onemine.org" target="_blank" rel="noopener noreferrer">OneMine.org Partner Portal</a></li>
@@ -59,7 +61,11 @@ function Footer() {
             </p>
             <p className="contact-line">
               <PhoneCall size={18} className="c-icon" />
-              <a href="tel:8184980777">+91 81849 80777</a>
+              <span><strong>24/7 Free Call Us:</strong> <a href="tel:8184980777">+91 81849 80777</a></span>
+            </p>
+            <p className="contact-line">
+              <Clock size={18} className="c-icon" />
+              <span><strong>Working Hours:</strong> Mon to Fri (10.00 AM - 06.00 PM)</span>
             </p>
             <p className="contact-line">
               <Mail size={18} className="c-icon" />

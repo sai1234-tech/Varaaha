@@ -42,6 +42,7 @@ function Header() {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Our Products", path: "/products" },
+    { name: "Our Quarries", path: "/quarries" },
     { name: "Our Services", path: "/services" },
     { name: "Contact Us", path: "/contact" },
   ];
