@@ -19,7 +19,9 @@ import {
   Sparkles,
   ShieldCheck,
   ChevronRight,
-  Download
+  Download,
+  Cpu,
+  Pickaxe
 } from "lucide-react";
 import "./ArticleSection.css";
 
@@ -151,6 +153,74 @@ function ArticleSection() {
                 <CheckCircle2 size={16} className="check-icon" />
                 <span>Timely International Export Shipping</span>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Enterprise Expertise, Infrastructure, Quarries & Projects Grid */}
+        <section className="section-container core-strengths-section">
+          <div className="section-header center">
+            <div className="section-kicker">
+              <Sparkles size={16} />
+              <span>Capabilities & Infrastructure</span>
+            </div>
+            <h2>Our Core Enterprise Expertise</h2>
+            <p className="section-desc">
+              Direct quarry ownership, Sweden-imported machinery, and precision block dressing engineered for global projects.
+            </p>
+          </div>
+
+          <div className="expertise-cards-grid">
+            {/* Card 1: Our Expertise */}
+            <div className="glass-panel expertise-card">
+              <div className="expertise-card-header">
+                <div className="expertise-icon-box gold">
+                  <Layers size={26} />
+                </div>
+                <h3>Our Expertise</h3>
+              </div>
+              <p>
+                We are producing blocks of various dimensions according to the requirements and demands of our clients. Our clients can discuss their requirement with our professionals and achieve specific solutions. Our produced material is well dressed in cuboid shape, free of any cracks and visible and prominent variation. In case, there are some special requirements, we have resources and facility to deliver with perfection.
+              </p>
+            </div>
+
+            {/* Card 2: Infrastructure */}
+            <div className="glass-panel expertise-card">
+              <div className="expertise-card-header">
+                <div className="expertise-icon-box blue">
+                  <Cpu size={26} />
+                </div>
+                <h3>Infrastructure</h3>
+              </div>
+              <p>
+                We are equipped with <strong>Sweden imported HEMM</strong> (heavy earth moving machinery) and a large number of tools such as high-pressure compressors, drill bits, drill rods, and diamond wire ropes.
+              </p>
+            </div>
+
+            {/* Card 3: Quarries */}
+            <div className="glass-panel expertise-card">
+              <div className="expertise-card-header">
+                <div className="expertise-icon-box emerald">
+                  <Pickaxe size={26} />
+                </div>
+                <h3>Quarries</h3>
+              </div>
+              <p>
+                Varaaha Mines' main root of supply is its <strong>own quarries</strong>, which let us guarantee the supply of strategic materials and manage a huge range of architectural and engineering projects.
+              </p>
+            </div>
+
+            {/* Card 4: Our Granite Projects */}
+            <div className="glass-panel expertise-card">
+              <div className="expertise-card-header">
+                <div className="expertise-icon-box purple">
+                  <Globe size={26} />
+                </div>
+                <h3>Our Granite Projects</h3>
+              </div>
+              <p>
+                Only a leading company such as Varaaha Mines with the capacity to gather large resources can carry out an extensive range of architectural projects worldwide with guaranteed execution.
+              </p>
             </div>
           </div>
         </section>
